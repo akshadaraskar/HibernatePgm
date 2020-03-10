@@ -5,11 +5,13 @@ import javax.persistence.Id;
 
 
 
-@Entity
+@Entity(name="USER_DETAILS")
 public class UserDetails 
 {
 	@Id
+	@Column(name="USER_ID")
 	private int userId;
+	@Column(name="USER_NAME")
 	private String userName;
 	
 	public int getUserId() {
